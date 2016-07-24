@@ -43,7 +43,7 @@ ggplot(shotDataf, aes(x=LOC_X, y=LOC_Y)) +
 
 
 # half court image
-courtImg.URL <- "http://lookingforamerica.us/wp-content/uploads/2015/03/Nba-Basketball-Court-Dimensions.jpg"
+courtImg.URL <- "https://thedatagame.files.wordpress.com/2016/03/nba_court.jpg"
 court <- rasterGrob(readJPEG(getURLContent(courtImg.URL)),
            width=unit(1,"npc"), height=unit(1,"npc"))
  
