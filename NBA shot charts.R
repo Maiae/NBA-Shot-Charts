@@ -21,7 +21,7 @@ shotURL <- paste("http://stats.nba.com/stats/shotchartdetail?CFID=33&CFPARAMS=20
 shotData <- fromJSON(file = shotURL, method="C")
 
 # unlist shot data, save into a data frame
-shotDataf <- data.frame(matrix(unlist(shotData$resultSets[[1]][[3]]), ncol=21, byrow = TRUE))
+shotDataf <- data.frame(matrix(unlist(shotData$resultSets[[1]][[3]]), ncol=24, byrow = TRUE))
 
 # shot data headers
 colnames(shotDataf) <- shotData$resultSets[[1]][[2]]
